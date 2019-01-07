@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<ol id="todo-list">
+</ol>
+
+<script type="text/javascript">
+
+    var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+
+    for (i = 0; i < tasks.length; i++) {
+
+        var newLi = $('<li>');
+        newLi.html(tasks[i]);
+
+        var list = $('#todo-list');
+        list.append(newLi);
+        newLi.addClass('task');
+    }
+
+</script>
+</body>
+</html>
